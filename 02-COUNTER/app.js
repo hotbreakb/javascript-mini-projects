@@ -1,0 +1,1 @@
+const count = document.querySelector(".count");

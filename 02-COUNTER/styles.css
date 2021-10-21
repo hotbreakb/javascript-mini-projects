@@ -1,0 +1,102 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+================
+Variables
+================
+*/
+
+:root {
+  /* font */
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  /* font-size */
+  --xlargme-size: 6rem;
+  --largme-size: 4rem;
+  --medium-size: 0.9rem;
+  /* color */
+  --black-color: #222222;
+  --white-color: #ffffff;
+  --grey-color: #f2f5f8;
+  --navy-color: #182940;
+}
+/*
+================
+Global Styles
+================
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--ff-secondary);
+  background-color: var(--grey-color);
+}
+
+button {
+  border: none;
+}
+
+/*
+================
+Container
+================
+*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h4 {
+  font-size: var(--largme-size);
+  font-family: var(--ff-primary);
+  color: var(--navy-color);
+}
+
+.container .count {
+  font-size: var(--xlargme-size);
+  margin: 0.7%;
+}
+
+.container .btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .btns button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: var(--medium-size);
+  font-stretch: extra-expanded;
+  border: var(--black-color) solid 2px;
+  padding: 4% 7%;
+  margin: 4%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.container .btns button:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.5s ease-out;
+}
+
+.container input {
+  background-color: rgba(0, 0, 0, 0);
+}
