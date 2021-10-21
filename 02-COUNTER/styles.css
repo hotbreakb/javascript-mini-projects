@@ -74,29 +74,31 @@ Container
 }
 
 .container .btns {
+  width: 30vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.container .btns button {
+.container .btns button,
+.container .btns .unit {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0);
+  margin: 2%;
+  padding: 2%;
+  /* font */
   font-size: var(--medium-size);
   font-stretch: extra-expanded;
+  text-transform: uppercase;
+  text-align: center;
+  /* box */
   border: var(--black-color) solid 2px;
-  padding: 4% 7%;
-  margin: 4%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  text-transform: uppercase;
 }
 
 .container .btns button:hover {
   background-color: var(--black-color);
   color: var(--white-color);
   transition: all 0.5s ease-out;
-}
-
-.container input {
-  background-color: rgba(0, 0, 0, 0);
 }
