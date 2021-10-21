@@ -1,0 +1,127 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* background */
+  --header-background: #ffffff;
+  --background-color: #f1f5f8;
+  /* font-size */
+  --large-size: 2.6rem;
+  --medium-size: 1rem;
+  /* font-color */
+  --sky-color: #62a4e3;
+  --black-color: #222222;
+  --white-color: #ffffff;
+  /* font */
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background-color: var(--background-color);
+}
+
+button {
+  border: none;
+}
+/*
+===============
+header
+===============
+*/
+
+header {
+  display: flex;
+  background-color: var(--header-background);
+  justify-content: space-around;
+  padding: 0.6% 20%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .title {
+  color: var(--sky-color);
+  font-size: var(--medium-size);
+}
+/*
+===============
+section
+===============
+*/
+section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .text-area {
+  background-color: var(--black-color);
+  font-size: var(--large-size);
+  font-family: var(--ff-primary);
+  border-radius: 5px;
+  padding: 0.7% 1%;
+  margin: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+section .text-area .text {
+  color: var(--white-color);
+}
+
+section .text-area .color-text {
+  color: var(--sky-color);
+}
+
+section .change-btn {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: var(--medium-size);
+  border: var(--black-color) solid 2px;
+  padding: 0.8% 1.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, z 0, 0.1);
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section .change-btn:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.5s ease-out;
+}
+
+section .color-chip {
+  display: flex;
+  height: 6vh;
+}
+
+section .color-chip .previous-color {
+  width: 4vh;
+  height: 3vh;
+  margin: 2%;
+  background-color: white;
+}
